@@ -7,5 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/my-research/centralized-configuration
-          # default-label: main # master ???? default ?
+          uri: https://github.com/my-research/centralized-configuration-private
+          username: dhslrl321
+          password: rltgjq1100

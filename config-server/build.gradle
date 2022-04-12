@@ -5,7 +5,6 @@ plugins {
 }
 
 group = 'com.tistory.wonit'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
@@ -23,8 +22,13 @@ ext {
 }
 
 dependencies {
+    // spring boot
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // spring cloud config
     implementation 'org.springframework.cloud:spring-cloud-config-server'
+
+    // lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
