@@ -16,3 +16,14 @@
   - yml 파일로 요청하기 : `http://localhost:8888/{application.yml}`
   - name, profile, label 로 요청하기 : `http://localhost:8888/{name}/{profile}/{label}`
     - label : default 가 master
+
+# 보안 설정
+
+- github private repository 를 통한 외부 접근 차단
+  - github username, password 를 config-server 에 추가해줘야 함
+    - password 는 authentication-key ? 를 이용해야함
+    - 단점은 개인 계정이 config-server 의 설정에 포함됨
+  - git ssh 를 이용하여 인증할 수 있음
+    - ssh-keygen 을 사용하면 됨
+    - `ssh-keygen -m PEM -t rsa -b 4096 -C "comment"`
+    - `ssh-keygen -t ecdsa -b 521 -C "dhslrl321@github.com"`

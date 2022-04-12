@@ -1,7 +1,6 @@
 server:
   port: 8888
 
-
 spring:
   cloud:
     config:
@@ -9,4 +8,4 @@ spring:
         git:
           uri: https://github.com/my-research/centralized-configuration-private
           username: dhslrl321
-          password: rltgjq1100
+          password: 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
