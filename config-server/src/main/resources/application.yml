@@ -6,6 +6,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/my-research/centralized-configuration-private
-          username: dhslrl321
-          password: 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
+          uri: https://github.com/my-research/centralized-configuration
